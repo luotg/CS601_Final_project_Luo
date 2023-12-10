@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.10/vue.global.min.js" integrity="sha512-es4vSPtFlEKtmABZjNbGIagxq+4vAymgRWKhEt4C7Z+R8nHasGt/1H5JCBnUILChOXg1i1bImtqHul/LM7UxlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Tiangang Luo's Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="college.html">China College</a></li>
+                    <li><a href="ucollege.html">American College</a></li>
+                    <li><a href="rest.html">Eat</a></li>
+                    <li><a href="place.html">Place</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.facebook.com/tiangang.luo.16/" target="_blank" class="facebook-icon">
+                <img src="./images/facebook.png" alt="Facebook" width="20" height="20">
+            </a>
+        </div>
+    </header>
+
+    <main id="app">
+        <section id="before">
+            <h1>Before coming to USA</h1>
+            <article>
+                <p>Before coming to the United States, I lived in Shanghai, China. Currently, my family is all in Shanghai. I experienced my life from elementary school to high school in Shanghai. It was an unforgettable experience. The weather in Shanghai is very warm, just like LA. As the largest city in China, Shanghai contains a variety of cuisines and cultures from all over the world.</p>
+            </article>
+        </section>
+
+
+
+    <section id="after">
+        <h1>Life in the USA</h1>
+        <article>
+            <div class="image-container" @mouseover="startAutoChange" @mouseout="stopAutoChange">
+                <img :src="currentImage.src" :alt="currentImage.alt" style="width: 300px; height: 200px;" />
+            </div>
+            <p class="description">{{ currentImage.description }}</p>
+                <p>When I first came to the United States, I attended Central Michigan University for my undergraduate studies. After graduating from CMU in 2019, I came to the University of Michigan to complete my graduate degree. After graduating from the University of Michigan in 2021, I came to the Chicago area to work and live. While working, I also chose to continue my studies at Boston University.</p>
+                <p>Chicago is different from Shanghai. The weather here is very cold. I had never seen snow in Shanghai, but the heavy snow in Chicago opened my eyes to a new world. As the third-largest city in the United States, Chicago, like Shanghai, brings together all kinds of food from around the world. The Chicago Bulls are my favorite team too. I love living in Chicago.</p>
+                <video width="480" src="./videos/bull.mp4" poster="./videos/bulls.jpg" controls></video>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Tiangang Luo</p>
+    </footer>
+</body>
+</html>

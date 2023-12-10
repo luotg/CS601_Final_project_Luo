@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+}
+
+label, input, textarea, button {
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}

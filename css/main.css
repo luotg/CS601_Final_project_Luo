@@ -1,0 +1,219 @@
+header {
+    width: 100%;
+    background: linear-gradient(to right, gold, pink);
+    box-shadow: 0 0 10px black;
+    border: 1px solid black;
+    text-align: center;
+}
+
+body{
+    background-color: lightblue;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-content h1 {
+    margin: 0;
+    flex: 0.7;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1; 
+    justify-content: flex-end; 
+}
+
+
+nav a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    background-color: brown;
+    font-size: 15px;
+    padding: 6px;
+    color: white;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.facebook-icon {
+    margin-left: auto;
+}
+
+.facebook-icon:hover {
+    filter: invert(1);
+}
+
+section a {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    display: inline;
+    font-size: 15px;
+}
+
+section a:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+table th {
+    border: 1px solid black;
+    background-color: wheat;
+}
+
+table tr td {
+    border: 1px solid black;
+}
+
+tr {
+    background-color: darkseagreen;
+}
+
+tr:nth-child(even) {
+    background-color: steelblue;
+}
+
+section table img {
+    max-width: 250px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+    section table img {
+        max-width: 100px;
+        height: auto;
+    }
+    header {
+        font-size: 5px;
+    }
+    nav a {
+	font-size: 6px;
+    }
+}
+
+section h1 {
+    background-image: linear-gradient(to right, violet, green, orange);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        font-size: 5px;
+    }
+    nav a {
+        font-size: 10px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1025px) {
+    main {
+        padding: 40px;
+    }
+    body {
+        font-size: 30px;
+    }
+    header {
+        font-size: 10px;
+    }
+}
+
+section ol li {
+    display: inline-block;
+}
+
+ol li img {
+    max-width: 100px;
+    height: auto;
+    box-shadow: 2px 2px 4px black;
+}
+
+footer {
+    text-align: center;
+    padding: 1px 0;
+    background-color: gold;
+    border: 1px solid black;
+    font-size: small;
+}
+
+#college p,
+#ucollege p,
+#restaurant p,
+#place p {
+    font-size: 15px; 
+}
+#about p {
+    font-size: 20px; 
+}
+
+#college h1,
+#ucollege h1,
+#restaurant h1,
+#place h1 {
+    font-size: 25px; 
+}
+
+
+#college p,
+#ucollege p,
+#restaurant p,
+#place p {
+    font-size: 15px; 
+}
+
+
+
+#about,
+#college,
+#ucollege,
+#restaurant,
+#place {
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px black;
+    border: 1px solid black; 
+    padding: 10px;
+}
+
+#college,
+#ucollege,
+#restaurant,
+#place {
+    width: 30%;
+    display: inline-flex;
+}
+
+#about {
+    border: none !important;
+    box-shadow: none !important;
+}
