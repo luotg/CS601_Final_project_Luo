@@ -56,10 +56,4 @@ function resetForm() {
     document.getElementById('contactForm').reset();
 }
 
-function saveFormData(formData) {
-    var savedData = JSON.parse(localStorage.getItem('savedFormData')) || [];
 
-    savedData.push(formData);
-
-    localStorage.setItem('savedFormData', JSON.stringify(savedData));
-}
