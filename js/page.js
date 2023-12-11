@@ -30,13 +30,13 @@ menu.innerHTML = getMenu();
 function getMenu() {
     return `
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="college.html">China College</a></li>
-            <li><a href="ucollege.html">American College</a></li>
-            <li><a href="rest.html">Eat</a></li>
-            <li><a href="place.html">Place</a></li>
-            <li><a href="contact.html">Contact me</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/">Home</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/about">About Me</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/college">China College</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/ucollege">American College</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/rest">Eat</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/place">Place</a></li>
+            <li><a href="https://finalprojecttiangang.netlify.app/contact">Contact me</a></li>
         </ul>
     `;
 }
